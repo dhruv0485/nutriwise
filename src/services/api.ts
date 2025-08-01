@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://nutriwise-m0ob.onrender.com/api';
 
 export interface RegisterData {
   fullName: string;
