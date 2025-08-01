@@ -35,12 +35,14 @@ app.add_middleware(
         "http://localhost:3000", 
         "http://localhost:5173", 
         "http://127.0.0.1:3000",
-        "https://nutriwise-frontend.onrender.com",  # Add your frontend URL
-        "https://*.onrender.com"  # Allow all Render subdomains
+        "https://nutriwise-frontend.onrender.com",
+        "https://nutriwise-frontend.onrender.com/",
+        "https://nutriwise-frontend.onrender.com/*"
     ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
+    expose_headers=["*"]
 )
 
 # Include routers
